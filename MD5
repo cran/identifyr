@@ -1,0 +1,13 @@
+e4392c2820f5751709ba30e0cec14d7d *DESCRIPTION
+5d9f9040604d91b36d3ed1ffcbf8b85c *INDEX
+a75ed6b554aa4a49ce1885e783c7313f *NAMESPACE
+ff18a23723e127f3194972cc5f91aac3 *R/clean_id.R
+36abc005e3ed476dc573292a2265a864 *R/clean_pb.R
+377584f76c5baeb33aa25112941428a8 *R/clean_x.R
+6d7ceb64d46589d662acfa0f801ff2c8 *README.md
+d5d170c0405f743caf593af2b8b4d901 *man/clean_id.Rd
+d28f7754bab662d6e43ed3ae5b426888 *man/clean_pb.Rd
+eb1f1e888483b8b20e5bc964012adef6 *man/clean_x.Rd
+8b499ba2fc3a01a1433458934d353e73 *tests/testthat.R
+42173b7b1b204a6ae0ecb4bf615ef513 *tests/testthat/test_pbnum.R
+1c057af0b8845ca9e9c3fb17d8a22fa9 *tests/testthat/test_xnum.R
