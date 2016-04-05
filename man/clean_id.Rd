@@ -9,7 +9,7 @@ clean_id(data, cols = list(), FUN = list())
 \arguments{
 \item{data}{is a data.frame containing any number of columns.}
 
-\item{cols}{is a list of integers indicating the column numbers that are to be cleaned up.}
+\item{cols}{is a list of integers or column names indicating the columns that are to be cleaned up.}
 
 \item{FUN}{is a list of functions to pass to the specified columns (must be in same order as the column index)}
 }
@@ -17,7 +17,7 @@ clean_id(data, cols = list(), FUN = list())
 Returns a dataframe with replacements in the specified columns
 }
 \description{
-Provides a method for applying both cleaning functions (clean_x and clean_pb) to a dataframe by index.
+Provides a method for applying both cleaning functions (clean_x and clean_case) to a dataframe by index.
 }
 \details{
 This function is meant to be used on multiple columns at once. It makes use of the magrittr pipe operator to provide neat code.
@@ -27,11 +27,11 @@ df <- data.frame(pbnum = c("PB123", "PB 0034", "  5678 ", "None"),
 status = c("Active", "Closed", "Closed", "Active"),
 xnum = c("X00123", "9512", "X789", "NOT IN APS"))
 
-#' df \%>\% clean_id(cols = c(1,3), FUN = c("clean_pb", "clean_x"))
+#' df \%>\% clean_id(cols = c(1,3), FUN = c("clean_case", "clean_x"))
 
-#' clean_id(data = df, cols = c(1,3), FUN = c("clean_pb", "clean_x"))
+#' clean_id(data = df, cols = c(1,3), FUN = c("clean_case", "clean_x"))
 }
 \seealso{
-clean_x, clean_pb
+clean_x, clean_case
 }
 
